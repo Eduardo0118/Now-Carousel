@@ -1,0 +1,16 @@
+.provider-ticket-container {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.provider-ticket-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 14px;
+}

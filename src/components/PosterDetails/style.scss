@@ -1,0 +1,47 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  z-index: -1;
+  border: 2px solid #fff;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(10, 10, 10, 0.99) 58%
+  );
+
+  .channel {
+    width: 30px;
+    height: 28px;
+    display: block;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

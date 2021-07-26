@@ -1,0 +1,33 @@
+.carousel__left {
+  left: -10px;
+  border-radius: 0px 8px 8px 0px;
+}
+.carousel__right {
+  right: -10px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.carousel__left,
+.carousel__right {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 60px;
+  top: 0;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease-in;
+
+  &__active {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
